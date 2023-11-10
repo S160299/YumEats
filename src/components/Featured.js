@@ -35,15 +35,14 @@ const Featured = () => {
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
         style={{ backgroundImage: `url(${sliders[currentIndex].url})` }}
       ></div>
-      <div className="flex-row relative">
-        <div className="hidden group-hover:block absolute -left-5 top-1/2 transform -translate-y-1/2 text-2xl rounded-full p-2 bg-orange-700">
+      <div className="flex-row items-center justify-between">
+        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-orange-700">
           <BsChevronCompactLeft className="text-white" onClick={prevSlider} />
         </div>
-        <div className="hidden group-hover:block absolute -right-5 top-1/2 transform -translate-y-1/2 text-2xl rounded-full p-2 bg-orange-700">
+        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-orange-700">
           <BsChevronCompactRight className="text-white" onClick={nextSlider} />
         </div>
       </div>
-
       <div className="flex top-4 justify-center py-2">
         {sliders.map((sliderItems, slideIndex) => (
           <div
