@@ -30,7 +30,7 @@ const Featured = () => {
     setCurrentIndex(slideIndex)
   }
   return (
-    <div className="max-w-[1520px] h-[500px] mx-auto w-full py-4 px-4 relative group">
+    <div className="max-w-[1520px] h-[500px] mx-auto w-full mt-7 py-4 px-4 relative group">
       <div
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
         style={{ backgroundImage: `url(${sliders[currentIndex].url})` }}
